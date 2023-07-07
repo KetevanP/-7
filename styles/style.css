@@ -1,0 +1,55 @@
+body{
+	background-image: url(../images/forest.jpg);
+	background-color: white;
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.owl{
+	width: 75px;
+	position: absolute;
+	top: 295px;
+	left: 80.7%;
+	opacity: 0;
+	transition: linear 2s;
+}
+.owl:hover{
+	opacity: 1;
+}
+.hedgehog{
+	width: 150px;
+	position: absolute;
+	left: 30%;
+	top: 570px;
+	animation: hedgehog infinite linear 10s;
+}
+@keyframes hedgehog{
+	0% {left:30%}
+	100% {left:110%}
+}
+.rooster{
+	width: 175px;
+	position: absolute;
+	top: 323px;
+	left: 61%;
+	animation: rooster infinite linear 2s;
+}
+@keyframes rooster{
+	0%{top:323px}
+	50%{top:300px}
+	100%{top:323px}
+}
+.bird{
+	width: 100px;
+	position: absolute;
+	top: 200px;
+	left: -10%;
+	animation: bird infinite ease-out 10s;
+}
+@keyframes bird{
+	0%{top:300px; left:-10%}
+	40%{top:10px; left:45%}
+	100%{top:150px; left:110%}
+}
